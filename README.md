@@ -1,17 +1,13 @@
-# 五筆字型
+# 五笔字型
 
-配方： ℞ **wubi**
+配方： ℞ **wubi86wang**
 
-[Rime](https://rime.im) 五筆字型輸入方案
+[Rime](https://rime.im) 86王码五笔字型輸入方案
 
-五筆字型 86 版
+五笔字型 86王码 版
 
 ## 安裝
-
-拼音反查、五筆拼音混合輸入依賴於
-
-  - [袖珍简化字拼音](https://github.com/rime/rime-pinyin-simp) ℞ **`pinyin-simp`**
-
-[東風破](https://github.com/rime/plum) 安裝口令： `bash rime-install wubi pinyin-simp`
-
-授權條款：見 [LICENSE](LICENSE)
+纯五笔安装：
+1. 切换至rime输入法，右下角右键程序文件夹
+2. 在程序文件夹空白处右键，点击“在终端中打开”
+3. 执行命令`rime-install ugvibib/rime-wubi86wang`

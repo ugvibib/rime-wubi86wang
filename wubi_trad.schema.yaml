@@ -3,14 +3,14 @@
 
 schema:
   schema_id: wubi_trad
-  name: 五筆·簡入繁出
-  version: "0.7"
+  name: 五笔·简入繁出
+  version: "0.8"
   author:
-    - 發明人 王永民先生
-    - 輸入方案製作 佛振 <chen.sst@gmail.com>
+    - 发明人 王永民先生
+    - 输入方案制作 佛振 <chen.sst@gmail.com>
   description: |
-    五筆字型86版 簡入繁出
-    需要安裝 opencc 簡繁轉換詞典
+    五笔字型86版 简入繁出
+    需要安裝 opencc 简繁转换词典
   dependencies:
     - pinyin_simp
 
@@ -21,10 +21,10 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: extended_charset
-    states: [ 常用, 增廣 ]
+    states: [ 常用, 增广 ]
   - name: zh_trad
     reset: 1
-    states: [ 简体, 繁體 ]
+    states: [ 简体, 繁体 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
