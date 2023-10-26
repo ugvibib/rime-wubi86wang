@@ -1,0 +1,19 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Oct 26 12:17:20 2023"
+  rime_version: 1.8.5
+patch:
+  style/color_scheme: lost_temple
+  # 嵌入编码模式，默认是true开启，若想关闭，取消注释即可（删除前面的#号）
+  style/inline_preedit: true
+  # 嵌入首选项内容(字词)。有4个选项可设
+  # input 嵌入输入码 | composition 嵌入编码 | preview 嵌入首选项 | preview_all 嵌入全部内容
+  #style/preedit_type: composition
+  # 启用后可隐藏候选框(盲打)，建议配合上面的嵌入首选项，一起使用
+  #style/layout/margin_y: -1
+  #style/layout/round_corner: 0
+  #style/layout/corner_radius: 10
+  #style/layout/border: 0
+  #style/layout/border_width: 0

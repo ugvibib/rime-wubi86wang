@@ -53,22 +53,29 @@ speller:
   max_code_length: 4
   alphabet: "[;'zyxwvutsrqponmlkjihgfedcba]"
   # initials: "abcdefghijklmnopqrstuvwxyz;'"
-  auto_select_pattern: ^;\w+|^\w{4}$ #自动上屏规则  对 [;] 引导的编码实行候选唯一自动上屏
+  #四码唯一自动上屏
+  auto_select_unique_candidate: true
+  #auto_select_pattern: ^;\w+|^\w{4}$ #自动上屏规则  对 [;] 引导的编码实行候选唯一自动上屏
   # 若要添加四码候选唯一自动上屏功能，在  ^;\w+ 后面 加上  |^\w{4}$  即可
+  
 
 translator:
   dictionary: wubi86wang
-  enable_charset_filter: true
-  enable_sentence: true
-  enable_encoder: true
-  encode_commit_history: true
-  #max_phrase_length: 4
+  enable_charset_filter: false
+  # 连打
+  enable_sentence: false
+  enable_encoder: false
+  encode_commit_history: false
+  max_phrase_length: 4
   disable_user_dict_for_patterns:
     - "^z.*$"
-  enable_completion: true  # 编码提示 true 开启  false 关闭
+  # 编码提示
+  enable_completion: true
   comment_format:  # 提示码自定义
     #- "xform/~/ /" # 去掉编码提示前的~号
     #- "xform/^/ /" #提示前面 +间距
+  # 用户字典和字频调整
+  enable_user_dict: false
 
 reverse_lookup:
   dictionary: pinyin_simp
@@ -110,17 +117,4 @@ recognizer:
 menu:
   page_size: 6 #候选数量，Rime默认就是5个
   # alternative_select_labels: [ ㊀, ㊁, ㊂, ㊃, ㊄, ㊅, ㊆, ㊇, ㊈ ]  #自定义候选序号显示符
-
-style:
-  # 嵌入编码模式，默认是true开启，若想关闭，取消注释即可（删除前面的#号）
-  inline_preedit: false
-  # 嵌入首选项内容(字词)。有4个选项可设：
-  # input 嵌入输入码 | composition 嵌入编码 | preview 嵌入首选项 | preview_all 嵌入全部内容
-  #preedit_type: input
-  layout:
-    # 启用后可隐藏候选框(盲打)，建议配合上面的嵌入首选项，一起使用
-    #margin_y: -1
-    # 去掉圆角 新小狼毫（Win）
-    corner_radius: 0
-    round_corner: 0
 
